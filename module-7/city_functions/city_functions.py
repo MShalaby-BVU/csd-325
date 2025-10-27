@@ -1,7 +1,7 @@
-def citystring(city_name , country_name , population=None , language=None):
+def citystring(city_name , country_name, population=None, language=None):
     syntaxReturn = f"{city_name}, {country_name}"
     if population is not None:
-        syntaxReturn += f" - Population: {population}"
+        syntaxReturn += f" - Population - {population}"
     if language is not None:
         syntaxReturn += f", {language}"
     return syntaxReturn

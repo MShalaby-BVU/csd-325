@@ -1,12 +1,11 @@
 from city_functions import citystring
+import unittest
 
 
-def test_city_country():
-    print(citystring("Madrid" , "Spain"))
+class TestCityString(unittest.TestCase):
+    def test_city_country(self):
+        self.assertEqual(citystring("Madrid" , "Spain") , "Madrid, Spain")
 
 
-def main():
-    test_city_country()
-
-
-main()
+if __name__ == "__main__":
+    unittest.main()
